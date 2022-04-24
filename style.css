@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    text-decoration: none;
+    border: none;
+}
+/* navbar başlangıç */
+.navbar{
+    position: fixed;
+    z-index:1;
+    width: 200vh;
+    height: 80px;
+    background-color:black ;
+}
+.navbar ul{
+    text-align: center;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+    font-size: 20px;
+}
+.navbar ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 6px 13px;
+    font-family: roboto;
+    margin-top: 10px;
+}
+.navbar ul li a:hover{
+    background-color: #fff;
+    border-radius: 20px;
+    border: none;
+    color: black;
+}
+/* navbar bitiş */
+/* anasayfa başlangıç */
+#mainpage {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/hpbg.jpg);
+}
+.center{
+    height: 980px;
+}
+.center h1{
+    position: relative;
+    top: 280px;
+    color: white;
+    font-size: 100px;
+    width: 100%;
+    text-align: center;
+    font-family: roboto;
+}
+.center h2{
+    position: relative;
+    top: 350px;
+    color: white;
+    font-size: 100px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    font-family: roboto;
+}
+.center h2 span {
+    color:red;
+}
+/* anasayfa bitiş */
+/* hakkımda başlangıç */
+#aboutme{
+    background-image: url(images/hakbg.jpg);
+    width: 100%;
+    height: 100vh;
+}
+.about-text{
+    background-color: #373737;
+    padding: 50px;
+    opacity: 70%;
+    position: relative;
+    text-align: justify;
+    width: 820px;
+}
+.about-text h1{
+    color: white;
+    font-size: 50px;
+}
+.about-text h5{
+    color: white;
+    margin-top: 15px;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.about-text h5 span{
+    color: red;
+}
+.about-text p{
+    color: white;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    line-height: 2;
+    font-size: 18px;
+    font-family: roboto;
+}
+.about-text p .py{
+    color: #F6F580;
+}
+.about-text p .py2{
+    color:#60D2F6;
+}
+.about-text p .html{
+    color: #FF8700;
+}
+.about-text p .css{
+    color: #00A0FF;
+}
+.about-text p .js{
+    color: yellow;
+}
+/* hakkımda bitiş */
+/* iletişim başlangıç */
+#content{
+    position: relative;
+}
+.contact-section{
+    background-image: url(images/iletisimbg.jpg);
+    width: 100%;
+    height: 92vh;
+}
+.contact-section h1{
+    position: relative;
+    top: 50px;
+    font-family: roboto;
+    text-align: center;
+    color: #ddd;
+    font-size: 50px;
+}
+#map .mapp{
+    position: relative;
+    top: 100px;
+}
+.contact-form{
+    position: relative;
+    top: 100px;
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+}
+.contact-form-text{
+
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 0;
+    background: #111;
+    padding: 20px 40px;
+    outline: none;
+    color: #ddd;
+    transition: 0.5s;
+    padding-bottom: 35px;
+}
+.contact-form-text:focus{
+    box-shadow: 0 0 10px 4px #34495e;
+}
+.textarea.contact-form-textarea{
+    resize: none;
+    height: 120px;
+}
+.contact-form-btn{
+    float: right;
+    border: 0;
+    background: #34495e;
+    color: #fff;
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transform: 0.5s;
+}
+.contact-form-btn:hover{
+    background: #2989b9;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+/* iletişim bitiş */
+/* footer baslangic */
+#footer{
+    position: fixed;
+    bottom: 0;;
+    z-index:1;
+    width: 200vh;
+    height: 40px;
+    background-color:black ;
+    text-align: center;
+}
+#footer ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 4px 20px;
+    font-size: 20px;
+}
+#footer ul li a{
+        text-decoration: none;
+        margin-top: 10px;
+}
+#footer ul li #linkedin{
+    color: #0e76a8;
+}
+#footer ul li #instagram{
+    color: #8a3ab9;
+}
+#footer ul li #twitter{
+    color: #00acee;
+}
+#footer ul li #spotify{
+    color: #1DB954;
+}
+#footer ul li #wp{
+    color:#128C7E;
+}
+/* footer bitis */
+/* responsiv baslagiç */
+@media screen and (min-width:900px) {
+    .navbar{
+        text-align: center;
+        width: 100%;
+    }
+    .navbar ul li a{
+        font-size: 20px;
+    }
+    #mainpage{
+        width: 100%;
+        height: 100vh;
+        background-size: 100% 100%;
+    }
+    #mainpage .center{
+        height: auto;
+    }
+    .center h1{
+        font-size: 80px;
+    }
+    .center h2{
+        position: relative;
+        font-size: 50px;
+        top: 1;
+    }
+    #aboutme{
+        width: 100%;
+        height: 100vh;
+        background-size: 100% 100%;
+    }
+    .about-text{
+        text-align: justify;
+        left: 100px;
+        right: 30px;
+        top: 25%;
+        bottom: 25%;
+    }
+    .about-text h1{
+        font-size: 60px;
+    }
+    .about-text h5{
+        font-size: 50px;
+    }
+    .about-text p{
+        font-size: 20px;
+        font-weight: 800;
+        left: 30px;
+        right: 30px;
+        top: 25%;
+        bottom: 25%;
+    }
+    #contact{
+        width: 100%;
+        height: 100vh;
+    }
+    .contact-section{
+        height: 100vh;
+        background-size: 100% 100%;
+    }
+    #footer{
+        position: fixed;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+    }
+}
+@media screen and (max-width:900px) {
+    .navbar{
+        text-align: center;
+        width: 100%;
+        height: 50px;
+    }
+    .navbar ul li a{
+        position: relative;
+        bottom: 15px;
+        font-size: 10px;
+    }
+    #mainpage{
+        width: 100%;
+        height: 50vh;
+        background-size: 100% 100%;
+    }
+    .center h1{
+        position: relative;
+        top: 180px;
+        font-size: 40px;
+    }
+    .center h2{
+        position: relative;
+        top: 210px;
+        font-size: 20px;
+    }
+    #aboutme{
+        width: 100%;
+        height: 50vh;
+        background-size: 100% 100%;
+    }
+    .about-text{
+        text-align: justify;
+        left: 60px;
+        right: 30px;
+        top: 25%;
+        bottom: 25%;
+        width:300px;
+    }
+    .about-text h1{
+        font-size: 13px;
+    }
+    .about-text h5{
+        font-size: 13px;
+    }
+    .about-text p{
+        font-size: 10px;
+        font-weight: 800;
+        left: 30px;
+        right: 30px;
+        top: 25%;
+        bottom: 25%;  
+    }
+    #contact .contact-section{
+        height: 105vh;
+    }
+    .contact-form-btn{
+        position: relative;
+        bottom: 10px;
+    }
+    #footer{
+        position: fixed;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+    }
+    #contact .contact-section .mapp{
+        width: 70%;
+        height: 30vh;
+    }   
+}
+/* responsiv bitis */
