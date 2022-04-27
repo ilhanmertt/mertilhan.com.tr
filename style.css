@@ -210,19 +210,19 @@ input::-webkit-inner-spin-button {
         text-decoration: none;
         margin-top: 10px;
 }
-#footer ul li #linkedin{
+#linkedin{
     color: #0e76a8;
 }
-#footer ul li #instagram{
+#instagram{
     color: #8a3ab9;
 }
-#footer ul li #twitter{
+#twitter{
     color: #00acee;
 }
-#footer ul li #spotify{
+#spotify{
     color: #1DB954;
 }
-#footer ul li #wp{
+#wp{
     color:#128C7E;
 }
 /* footer bitis */
